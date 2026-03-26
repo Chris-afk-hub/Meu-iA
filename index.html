@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Jarvis</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+  color: white;
+}
+
+#jarvis {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  width: 300px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: move;
+}
+
+#chat {
+  height: 200px;
+  overflow-y: auto;
+  background: #000;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+canvas {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+</style>
+
+</head>
+<body>
+
+<div id="jarvis">
+  <div id="chat"></div>
+
+  <input id="input" placeholder="Escribe..." />
+  <button onclick="send()">Enviar</button>
+  <button onclick="startVoice()">🎤</button>
+</div>
+
+<canvas id="avatar"></canvas>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
